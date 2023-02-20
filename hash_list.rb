@@ -14,3 +14,28 @@ list_of_people = [
   { :name => "Carl", :age => 9 },
 ]
 
+b = list_of_people.length
+ i = 0
+# a = list_of_people.map {|age| age[:age]} 
+# c = list_of_people.map {|name| name[:name]} 
+
+# while  i <= b-1
+#   if a[i] >= 16
+#     puts c[i] 
+#   end
+#   i = i + 1
+# end
+# a = list_of_people.fetch(:age)
+while i <= b-1
+  if list_of_people[i].fetch(:age) >=16
+    p list_of_people[i].fetch(:name)
+  end
+  i = i + 1
+end
+
+
+
+
+
+
+  
